@@ -25,12 +25,15 @@ To deploy and interact with TraceBlock Investments:
 TraceBlock Investments offers investors a reliable and transparent platform for managing investments securely through blockchain technology. By eliminating intermediaries and automating investment processes with smart contracts, TraceBlock Investments ensures trustless interactions and enhanced transactional security.
 
 
-## SimpleBlockchain Smart Contract
+## Smart Contract - code overview
 
 The `SimpleBlockchain` smart contract embodies a basic blockchain implementation on the Ethereum network using Solidity. It consists of two main data structures: `Transaction` and `Block`. The `Transaction` struct records sender, receiver, and value details for each transaction, while the `Block` struct captures block metadata such as block number, timestamp, transactions mapping, parent hash, investor details, investment type, amount, nonce, and hash.
+
 The contract maintains two primary arrays: `blockchain` for storing blocks and `pendingTransactions` for transactions awaiting inclusion in blocks. 
 Key parameters like `difficulty` and `blockSize` control mining complexity and transaction limits, respectively. 
 
+
 The contract supports functionalities including adding transactions (`addTransaction`), mining new blocks (`mineBlock`), calculating block hashes (`calculateHash`), and determining proof of work (`calculateProofOfWork`). The implementation emphasizes decentralized validation and security through proof of work consensus, ensuring transactional transparency and immutability. 
+
 This contract serves as a foundational template for developing decentralized applications (dApps) requiring secure and auditable transaction processing on the Ethereum blockchain.
 
